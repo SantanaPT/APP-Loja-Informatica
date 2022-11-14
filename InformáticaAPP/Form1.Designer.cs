@@ -28,15 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.lbl_util = new System.Windows.Forms.Label();
             this.ficheirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,6 +55,17 @@
             this.reparar_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeAvariasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label_min = new System.Windows.Forms.Label();
+            this.label_hora = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label_sec = new System.Windows.Forms.Label();
+            this.timerSeg = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,58 +89,17 @@
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator5,
-            this.toolStripMenuItem7});
-            this.toolStripMenuItem5.Enabled = false;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.ShowShortcutKeys = false;
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(27, 36);
-            this.toolStripMenuItem5.Text = "⠀";
-            // 
-            // toolStripSeparator5
-            // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(79, 6);
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(82, 22);
-            this.toolStripMenuItem7.Text = "⠀";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(27, 36);
-            this.toolStripMenuItem6.Text = "⠀";
-            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
-            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(12, 36);
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(27, 36);
-            this.toolStripMenuItem1.Text = "⠀";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(27, 36);
-            this.toolStripMenuItem3.Text = "⠀";
             // 
             // lbl_util
             // 
             this.lbl_util.AutoSize = true;
             this.lbl_util.BackColor = System.Drawing.SystemColors.Window;
             this.lbl_util.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_util.Location = new System.Drawing.Point(661, 9);
+            this.lbl_util.Location = new System.Drawing.Point(658, 9);
             this.lbl_util.Name = "lbl_util";
             this.lbl_util.Size = new System.Drawing.Size(44, 18);
             this.lbl_util.TabIndex = 2;
@@ -225,6 +190,7 @@
             this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
             this.novoToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
             this.novoToolStripMenuItem.Text = "Novo";
+            this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
             // 
             // editarToolStripMenuItem
             // 
@@ -303,16 +269,110 @@
             // 
             this.loginToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.loginToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Lock_User_icon;
+            this.loginToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(58, 36);
             this.loginToolStripMenuItem.Text = " ";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(27, 36);
+            this.toolStripMenuItem1.Text = "⠀";
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(27, 36);
+            this.toolStripMenuItem3.Text = "⠀";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(27, 36);
+            this.toolStripMenuItem6.Text = "⠀";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem7.Text = "⠀";
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator5,
+            this.toolStripMenuItem7});
+            this.toolStripMenuItem5.Enabled = false;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.ShowShortcutKeys = false;
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(27, 36);
+            this.toolStripMenuItem5.Text = "⠀";
+            // 
+            // label_min
+            // 
+            this.label_min.AutoSize = true;
+            this.label_min.BackColor = System.Drawing.Color.White;
+            this.label_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_min.Location = new System.Drawing.Point(772, 8);
+            this.label_min.Name = "label_min";
+            this.label_min.Size = new System.Drawing.Size(23, 16);
+            this.label_min.TabIndex = 4;
+            this.label_min.Text = "00";
+            // 
+            // label_hora
+            // 
+            this.label_hora.AutoSize = true;
+            this.label_hora.BackColor = System.Drawing.Color.White;
+            this.label_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_hora.Location = new System.Drawing.Point(723, 8);
+            this.label_hora.Name = "label_hora";
+            this.label_hora.Size = new System.Drawing.Size(23, 16);
+            this.label_hora.TabIndex = 5;
+            this.label_hora.Text = "00";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(752, 5);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 20);
+            this.label1.TabIndex = 6;
+            this.label1.Text = ":";
+            // 
+            // label_sec
+            // 
+            this.label_sec.AutoSize = true;
+            this.label_sec.BackColor = System.Drawing.Color.White;
+            this.label_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_sec.Location = new System.Drawing.Point(801, 17);
+            this.label_sec.Name = "label_sec";
+            this.label_sec.Size = new System.Drawing.Size(15, 9);
+            this.label_sec.TabIndex = 7;
+            this.label_sec.Text = "00";
+            // 
+            // timerSeg
+            // 
+            this.timerSeg.Tick += new System.EventHandler(this.timerSeg_Tick);
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 523);
+            this.Controls.Add(this.label_sec);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_hora);
+            this.Controls.Add(this.label_min);
             this.Controls.Add(this.lbl_util);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -353,16 +413,21 @@
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vendasMensaisToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeAvariasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.Label lbl_util;
+        private System.Windows.Forms.ToolStripMenuItem reparar_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-        private System.Windows.Forms.Label lbl_util;
-        private System.Windows.Forms.ToolStripMenuItem reparar_ToolStripMenuItem;
+        private System.Windows.Forms.Label label_min;
+        private System.Windows.Forms.Label label_hora;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_sec;
+        private System.Windows.Forms.Timer timerSeg;
     }
 }
 

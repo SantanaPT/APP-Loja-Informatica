@@ -363,6 +363,16 @@ namespace InformáticaAPP.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lock_mexido {
+            get {
+                object obj = ResourceManager.GetObject("lock mexido", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Lock_User_icon {
             get {
                 object obj = ResourceManager.GetObject("Lock-User-icon", resourceCulture);
@@ -416,6 +426,16 @@ namespace InformáticaAPP.Properties {
         internal static System.Drawing.Bitmap plus_sign_clip_art_removebg_preview__1_ {
             get {
                 object obj = ResourceManager.GetObject("plus_sign_clip_art-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap produtos {
+            get {
+                object obj = ResourceManager.GetObject("produtos", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

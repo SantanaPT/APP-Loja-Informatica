@@ -20,6 +20,10 @@ namespace InformáticaAPP
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            label_hora.Text = DateTime.Now.Hour.ToString("00");
+            label_min.Text = DateTime.Now.Minute.ToString("00");
+            label_sec.Text = DateTime.Now.Second.ToString("00");
+            timerSeg.Start();
             foreach (Control ctrl in this.Controls)
             {
                 if (ctrl is MdiClient)
@@ -87,6 +91,20 @@ namespace InformáticaAPP
             Form3 f3 = new Form3();
             f3.MdiParent = this;
             f3.Show();
+        }
+
+        private void novoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form4 f4 = new Form4();
+            f4.MdiParent = this;
+            f4.Show();
+        }
+
+        private void timerSeg_Tick(object sender, EventArgs e)
+        {
+            label_hora.Text = DateTime.Now.Hour.ToString("00");
+            label_min.Text = DateTime.Now.Minute.ToString("00");
+            label_sec.Text = DateTime.Now.Second.ToString("00");
         }
     }
 }
