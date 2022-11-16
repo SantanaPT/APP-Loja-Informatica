@@ -66,6 +66,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label_sec = new System.Windows.Forms.Label();
             this.timerSeg = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -365,11 +366,23 @@
             // 
             this.timerSeg.Tick += new System.EventHandler(this.timerSeg_Tick);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(266, 218);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(270, 25);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "LOGIN PASSWORD:  2022";
+            this.label2.Visible = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(856, 523);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label_sec);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label_hora);
@@ -429,6 +442,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label_sec;
         private System.Windows.Forms.Timer timerSeg;
+        private System.Windows.Forms.Label label2;
     }
 }
 
