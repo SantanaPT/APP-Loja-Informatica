@@ -44,7 +44,7 @@ namespace InformáticaAPP
         private void button2_Click(object sender, EventArgs e)
         {
 
-            if (text_pass.Text == "2022")
+            if (text_pass.Text == "bemvindoprofessor")
             {
                 FormMain.utilizador = text_nome.Text;
                 FormMain Parent = (FormMain)this.MdiParent;

@@ -106,5 +106,10 @@ namespace InformáticaAPP
             label_min.Text = DateTime.Now.Minute.ToString("00");
             label_sec.Text = DateTime.Now.Second.ToString("00");
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
