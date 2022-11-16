@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbl_util = new System.Windows.Forms.Label();
             this.ficheirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -54,13 +52,15 @@
             this.vendasMensaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reparar_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeAvariasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_util = new System.Windows.Forms.Label();
             this.label_min = new System.Windows.Forms.Label();
             this.label_hora = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,23 +88,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(856, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem2
-            // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(12, 36);
-            // 
-            // lbl_util
-            // 
-            this.lbl_util.AutoSize = true;
-            this.lbl_util.BackColor = System.Drawing.SystemColors.Window;
-            this.lbl_util.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_util.Location = new System.Drawing.Point(658, 9);
-            this.lbl_util.Name = "lbl_util";
-            this.lbl_util.Size = new System.Drawing.Size(44, 18);
-            this.lbl_util.TabIndex = 2;
-            this.lbl_util.Text = "Login";
-            this.lbl_util.Click += new System.EventHandler(this.lbl_util_Click);
             // 
             // ficheirosToolStripMenuItem
             // 
@@ -265,15 +248,39 @@
             this.registroDeAvariasToolStripMenuItem.Text = "Registro de Avarias";
             this.registroDeAvariasToolStripMenuItem.Click += new System.EventHandler(this.registroDeAvariasToolStripMenuItem_Click);
             // 
-            // loginToolStripMenuItem
+            // toolStripMenuItem5
             // 
-            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.loginToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Lock_User_icon;
-            this.loginToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(58, 36);
-            this.loginToolStripMenuItem.Text = " ";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator5,
+            this.toolStripMenuItem7});
+            this.toolStripMenuItem5.Enabled = false;
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.ShowShortcutKeys = false;
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(27, 36);
+            this.toolStripMenuItem5.Text = "⠀";
+            // 
+            // toolStripSeparator5
+            // 
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            this.toolStripSeparator5.Size = new System.Drawing.Size(79, 6);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(82, 22);
+            this.toolStripMenuItem7.Text = "⠀";
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(27, 36);
+            this.toolStripMenuItem6.Text = "⠀";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(12, 36);
             // 
             // toolStripMenuItem1
             // 
@@ -287,41 +294,34 @@
             this.toolStripMenuItem3.Size = new System.Drawing.Size(27, 36);
             this.toolStripMenuItem3.Text = "⠀";
             // 
-            // toolStripMenuItem6
+            // loginToolStripMenuItem
             // 
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(27, 36);
-            this.toolStripMenuItem6.Text = "⠀";
-            this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
+            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.loginToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Lock_User_icon;
+            this.loginToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(58, 36);
+            this.loginToolStripMenuItem.Text = " ";
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
-            // toolStripSeparator5
+            // lbl_util
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(177, 6);
-            // 
-            // toolStripMenuItem7
-            // 
-            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
-            this.toolStripMenuItem7.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem7.Text = "⠀";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripSeparator5,
-            this.toolStripMenuItem7});
-            this.toolStripMenuItem5.Enabled = false;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.ShowShortcutKeys = false;
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(27, 36);
-            this.toolStripMenuItem5.Text = "⠀";
+            this.lbl_util.AutoSize = true;
+            this.lbl_util.BackColor = System.Drawing.Color.Snow;
+            this.lbl_util.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_util.Location = new System.Drawing.Point(658, 9);
+            this.lbl_util.Name = "lbl_util";
+            this.lbl_util.Size = new System.Drawing.Size(44, 18);
+            this.lbl_util.TabIndex = 2;
+            this.lbl_util.Text = "Login";
+            this.lbl_util.Click += new System.EventHandler(this.lbl_util_Click);
             // 
             // label_min
             // 
             this.label_min.AutoSize = true;
-            this.label_min.BackColor = System.Drawing.Color.White;
+            this.label_min.BackColor = System.Drawing.Color.Snow;
             this.label_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_min.Location = new System.Drawing.Point(772, 8);
+            this.label_min.Location = new System.Drawing.Point(807, 11);
             this.label_min.Name = "label_min";
             this.label_min.Size = new System.Drawing.Size(23, 16);
             this.label_min.TabIndex = 4;
@@ -330,9 +330,9 @@
             // label_hora
             // 
             this.label_hora.AutoSize = true;
-            this.label_hora.BackColor = System.Drawing.Color.White;
+            this.label_hora.BackColor = System.Drawing.Color.Snow;
             this.label_hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_hora.Location = new System.Drawing.Point(723, 8);
+            this.label_hora.Location = new System.Drawing.Point(758, 11);
             this.label_hora.Name = "label_hora";
             this.label_hora.Size = new System.Drawing.Size(23, 16);
             this.label_hora.TabIndex = 5;
@@ -341,9 +341,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.BackColor = System.Drawing.Color.Snow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(752, 5);
+            this.label1.Location = new System.Drawing.Point(787, 7);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(14, 20);
             this.label1.TabIndex = 6;
@@ -352,13 +352,14 @@
             // label_sec
             // 
             this.label_sec.AutoSize = true;
-            this.label_sec.BackColor = System.Drawing.Color.White;
+            this.label_sec.BackColor = System.Drawing.Color.Snow;
             this.label_sec.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_sec.Location = new System.Drawing.Point(801, 17);
+            this.label_sec.Location = new System.Drawing.Point(841, 31);
             this.label_sec.Name = "label_sec";
             this.label_sec.Size = new System.Drawing.Size(15, 9);
             this.label_sec.TabIndex = 7;
             this.label_sec.Text = "00";
+            this.label_sec.Visible = false;
             // 
             // timerSeg
             // 
