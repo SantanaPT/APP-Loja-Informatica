@@ -124,7 +124,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::InformáticaAPP.Properties.Resources.security_Super_Tool__0E0E96;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(133, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(233, 180);
@@ -134,7 +134,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::InformáticaAPP.Properties.Resources.giphy__1_;
+            this.pictureBox2.Image = global::InformáticaAPP.Properties.Resources.output_onlinegiftools;
             this.pictureBox2.Location = new System.Drawing.Point(-11, -16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(527, 355);

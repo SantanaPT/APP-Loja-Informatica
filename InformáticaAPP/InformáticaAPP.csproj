@@ -245,5 +245,8 @@
   <ItemGroup>
     <None Include="Resources\lock mexido.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinegiftools.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

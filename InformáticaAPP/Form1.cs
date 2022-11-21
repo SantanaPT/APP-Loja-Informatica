@@ -66,6 +66,8 @@ namespace InformáticaAPP
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if(ActiveMdiChild != null)
+                ActiveMdiChild.Close();
             lbl_util.Text = "Login";
             Form2 f2 = new Form2();
             f2.MdiParent = this;
@@ -88,6 +90,8 @@ namespace InformáticaAPP
 
         private void registroDeAvariasToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
             Form3 f3 = new Form3();
             f3.MdiParent = this;
             f3.Show();
@@ -95,6 +99,8 @@ namespace InformáticaAPP
 
         private void novoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
             Form4 f4 = new Form4();
             f4.MdiParent = this;
             f4.Show();
