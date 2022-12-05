@@ -101,7 +101,7 @@ namespace InformáticaAPP
         {
             if (ActiveMdiChild != null)
                 ActiveMdiChild.Close();
-            txtProduto f4 = new txtProduto();
+            lstb_produtos f4 = new lstb_produtos();
             f4.MdiParent = this;
             f4.Show();
         }

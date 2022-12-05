@@ -1,6 +1,6 @@
 ﻿namespace InformáticaAPP
 {
-    partial class txtProduto
+    partial class lstb_produtos
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label_codigo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtProdutos = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbCategoria = new System.Windows.Forms.ComboBox();
             this.txtPreco = new System.Windows.Forms.TextBox();
@@ -47,6 +47,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -79,12 +80,12 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Designição:";
             // 
-            // textBox2
+            // txtProdutos
             // 
-            this.textBox2.Location = new System.Drawing.Point(121, 172);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 20);
-            this.textBox2.TabIndex = 17;
+            this.txtProdutos.Location = new System.Drawing.Point(121, 172);
+            this.txtProdutos.Name = "txtProdutos";
+            this.txtProdutos.Size = new System.Drawing.Size(232, 20);
+            this.txtProdutos.TabIndex = 17;
             // 
             // label2
             // 
@@ -239,13 +240,23 @@
             this.pictureBox4.TabIndex = 32;
             this.pictureBox4.TabStop = false;
             // 
-            // txtProduto
+            // listBox1
+            // 
+            this.listBox1.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(506, 96);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(270, 277);
+            this.listBox1.TabIndex = 33;
+            // 
+            // lstb_produtos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox3);
@@ -260,7 +271,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.cbCategoria);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtProdutos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label_codigo);
@@ -268,7 +279,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "txtProduto";
+            this.Name = "lstb_produtos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -287,7 +298,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label_codigo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtProdutos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cbCategoria;
         private System.Windows.Forms.TextBox txtPreco;
@@ -302,5 +313,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
