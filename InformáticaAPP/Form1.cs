@@ -101,7 +101,7 @@ namespace InformáticaAPP
         {
             if (ActiveMdiChild != null)
                 ActiveMdiChild.Close();
-            Form4 f4 = new Form4();
+            txtProduto f4 = new txtProduto();
             f4.MdiParent = this;
             f4.Show();
         }

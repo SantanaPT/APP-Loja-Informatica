@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace InformáticaAPP
 {
-    public partial class Form4 : Form
+    public partial class txtProduto : Form
     {
-        public Form4()
+        public txtProduto()
         {
             InitializeComponent();
         }
