@@ -493,6 +493,16 @@ namespace InformáticaAPP.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap text__1_1 {
+            get {
+                object obj = ResourceManager.GetObject("text (1)1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap traco {
             get {
                 object obj = ResourceManager.GetObject("traco", resourceCulture);

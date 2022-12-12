@@ -117,5 +117,14 @@ namespace InformáticaAPP
         {
 
         }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild != null)
+                ActiveMdiChild.Close();
+            Form5 f5 = new Form5();
+            f5.MdiParent = this;
+            f5.Show();
+        }
     }
 }
