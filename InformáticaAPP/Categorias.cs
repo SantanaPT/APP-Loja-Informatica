@@ -21,16 +21,17 @@ namespace InformáticaAPP
         {
             this.codigo = -1;
             this.categoria = null;
+            this.zona = null;
             this.fila = 0;
             this.prateleira = 0;
         }
-
-        public Categorias(int codigo, string categoria, int fila, int prateleira)
+        public Categorias(int codigo, string categoria, string zona, int fila, int prateleira)
         {
-            this.codigo = -1;
-            this.categoria = null;
-            this.fila = 0;
-            this.prateleira = 0;
+            this.codigo = codigo;
+            this.categoria = categoria;
+            this.zona = zona;
+            this.fila = fila;
+            this.prateleira = prateleira;
         }
 
         public int getCodigo() { return this.codigo; }

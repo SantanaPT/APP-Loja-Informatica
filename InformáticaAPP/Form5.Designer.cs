@@ -158,11 +158,11 @@
             // 
             this.bot_apagar5.Image = global::InformáticaAPP.Properties.Resources.icons8_multiplicação_24;
             this.bot_apagar5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bot_apagar5.Location = new System.Drawing.Point(26, 294);
+            this.bot_apagar5.Location = new System.Drawing.Point(26, 236);
             this.bot_apagar5.Name = "bot_apagar5";
             this.bot_apagar5.Size = new System.Drawing.Size(91, 49);
             this.bot_apagar5.TabIndex = 8;
-            this.bot_apagar5.Text = "Apagar";
+            this.bot_apagar5.Text = "Limpar";
             this.bot_apagar5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bot_apagar5.UseVisualStyleBackColor = true;
             this.bot_apagar5.Click += new System.EventHandler(this.bot_apagar5_Click);
@@ -178,12 +178,13 @@
             this.btnGuardar5.Text = "Guardar";
             this.btnGuardar5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnGuardar5.UseVisualStyleBackColor = true;
+            this.btnGuardar5.Click += new System.EventHandler(this.btnGuardar5_Click);
             // 
             // btnEliminar5
             // 
             this.btnEliminar5.Image = global::InformáticaAPP.Properties.Resources.icons8_vassoura_30__1_;
             this.btnEliminar5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnEliminar5.Location = new System.Drawing.Point(26, 239);
+            this.btnEliminar5.Location = new System.Drawing.Point(26, 294);
             this.btnEliminar5.Name = "btnEliminar5";
             this.btnEliminar5.Size = new System.Drawing.Size(91, 49);
             this.btnEliminar5.TabIndex = 7;
@@ -216,6 +217,7 @@
             this.btnAtualizar5.Text = "Atualizar";
             this.btnAtualizar5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAtualizar5.UseVisualStyleBackColor = true;
+            this.btnAtualizar5.Click += new System.EventHandler(this.btnAtualizar5_Click);
             // 
             // botFec
             // 
@@ -274,9 +276,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(601, 123);
+            this.groupBox1.Location = new System.Drawing.Point(638, 86);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(152, 93);
+            this.groupBox1.Size = new System.Drawing.Size(120, 133);
             this.groupBox1.TabIndex = 50;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Armazém";
@@ -286,7 +288,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(32, 63);
+            this.label3.Location = new System.Drawing.Point(20, 80);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 0;
@@ -296,7 +298,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(32, 43);
+            this.label2.Location = new System.Drawing.Point(20, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 0;
@@ -306,7 +308,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 20);
+            this.label1.Location = new System.Drawing.Point(20, 37);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
             this.label1.TabIndex = 0;
