@@ -126,5 +126,10 @@ namespace InformáticaAPP
             f5.MdiParent = this;
             f5.Show();
         }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

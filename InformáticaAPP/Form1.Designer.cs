@@ -31,20 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.lbl_util = new System.Windows.Forms.Label();
-            this.label_min = new System.Windows.Forms.Label();
-            this.label_hora = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label_sec = new System.Windows.Forms.Label();
-            this.timerSeg = new System.Windows.Forms.Timer(this.components);
-            this.label2 = new System.Windows.Forms.Label();
             this.ficheirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -66,7 +52,21 @@
             this.vendasMensaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reparar_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeAvariasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lbl_util = new System.Windows.Forms.Label();
+            this.label_min = new System.Windows.Forms.Label();
+            this.label_hora = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label_sec = new System.Windows.Forms.Label();
+            this.timerSeg = new System.Windows.Forms.Timer(this.components);
+            this.label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +89,167 @@
             this.menuStrip1.Size = new System.Drawing.Size(856, 40);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // ficheirosToolStripMenuItem
+            // 
+            this.ficheirosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.abrirToolStripMenuItem,
+            this.toolStripSeparator1,
+            this.guardarToolStripMenuItem,
+            this.guardarComoToolStripMenuItem,
+            this.toolStripSeparator2,
+            this.sairToolStripMenuItem});
+            this.ficheirosToolStripMenuItem.Enabled = false;
+            this.ficheirosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ficheirosToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Folders_icon;
+            this.ficheirosToolStripMenuItem.Name = "ficheirosToolStripMenuItem";
+            this.ficheirosToolStripMenuItem.Size = new System.Drawing.Size(116, 36);
+            this.ficheirosToolStripMenuItem.Text = "Ficheiros";
+            this.ficheirosToolStripMenuItem.Click += new System.EventHandler(this.ficheirosToolStripMenuItem_Click);
+            // 
+            // abrirToolStripMenuItem
+            // 
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.abrirToolStripMenuItem.Text = "Abrir";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(186, 6);
+            // 
+            // guardarToolStripMenuItem
+            // 
+            this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
+            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.guardarToolStripMenuItem.Text = "Guardar";
+            // 
+            // guardarComoToolStripMenuItem
+            // 
+            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
+            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.guardarComoToolStripMenuItem.Text = "Guardar como...";
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(186, 6);
+            // 
+            // sairToolStripMenuItem
+            // 
+            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
+            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // produtosToolStripMenuItem
+            // 
+            this.produtosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listagemToolStripMenuItem,
+            this.toolStripSeparator3,
+            this.novoToolStripMenuItem,
+            this.editarToolStripMenuItem,
+            this.apagarToolStripMenuItem,
+            this.toolStripSeparator4,
+            this.categoriasToolStripMenuItem});
+            this.produtosToolStripMenuItem.Enabled = false;
+            this.produtosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.produtosToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Monitor_2_icon;
+            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
+            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(117, 36);
+            this.produtosToolStripMenuItem.Text = "Produtos";
+            // 
+            // listagemToolStripMenuItem
+            // 
+            this.listagemToolStripMenuItem.Name = "listagemToolStripMenuItem";
+            this.listagemToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.listagemToolStripMenuItem.Text = "Listagem";
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(151, 6);
+            // 
+            // novoToolStripMenuItem
+            // 
+            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.novoToolStripMenuItem.Text = "Novo";
+            this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // apagarToolStripMenuItem
+            // 
+            this.apagarToolStripMenuItem.Name = "apagarToolStripMenuItem";
+            this.apagarToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.apagarToolStripMenuItem.Text = "Apagar";
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(151, 6);
+            // 
+            // categoriasToolStripMenuItem
+            // 
+            this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
+            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.categoriasToolStripMenuItem.Text = "Categorias";
+            this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
+            // 
+            // VendasToolStripMenuItem
+            // 
+            this.VendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registarToolStripMenuItem,
+            this.consultarToolStripMenuItem,
+            this.vendasMensaisToolStripMenuItem});
+            this.VendasToolStripMenuItem.Enabled = false;
+            this.VendasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.VendasToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Basket_Coins_icon;
+            this.VendasToolStripMenuItem.Name = "VendasToolStripMenuItem";
+            this.VendasToolStripMenuItem.Size = new System.Drawing.Size(104, 36);
+            this.VendasToolStripMenuItem.Text = "Vendas";
+            // 
+            // registarToolStripMenuItem
+            // 
+            this.registarToolStripMenuItem.Name = "registarToolStripMenuItem";
+            this.registarToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.registarToolStripMenuItem.Text = "Registar";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // vendasMensaisToolStripMenuItem
+            // 
+            this.vendasMensaisToolStripMenuItem.Name = "vendasMensaisToolStripMenuItem";
+            this.vendasMensaisToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
+            this.vendasMensaisToolStripMenuItem.Text = "Vendas Mensais";
+            // 
+            // reparar_ToolStripMenuItem
+            // 
+            this.reparar_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registroDeAvariasToolStripMenuItem});
+            this.reparar_ToolStripMenuItem.Enabled = false;
+            this.reparar_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.reparar_ToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Gears_icon;
+            this.reparar_ToolStripMenuItem.Name = "reparar_ToolStripMenuItem";
+            this.reparar_ToolStripMenuItem.Size = new System.Drawing.Size(134, 36);
+            this.reparar_ToolStripMenuItem.Text = "Reparações";
+            this.reparar_ToolStripMenuItem.Click += new System.EventHandler(this.reparar_ToolStripMenuItem_Click);
+            // 
+            // registroDeAvariasToolStripMenuItem
+            // 
+            this.registroDeAvariasToolStripMenuItem.Name = "registroDeAvariasToolStripMenuItem";
+            this.registroDeAvariasToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
+            this.registroDeAvariasToolStripMenuItem.Text = "Registro de Avarias";
+            this.registroDeAvariasToolStripMenuItem.Click += new System.EventHandler(this.registroDeAvariasToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5
             // 
@@ -135,6 +296,14 @@
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(27, 36);
             this.toolStripMenuItem3.Text = "⠀";
+            // 
+            // loginToolStripMenuItem
+            // 
+            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.loginToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Lock_User_icon;
+            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(44, 36);
+            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // lbl_util
             // 
@@ -208,174 +377,6 @@
             this.label2.Text = "LOGIN PASSWORD: welcome_";
             this.label2.Visible = false;
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // ficheirosToolStripMenuItem
-            // 
-            this.ficheirosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abrirToolStripMenuItem,
-            this.toolStripSeparator1,
-            this.guardarToolStripMenuItem,
-            this.guardarComoToolStripMenuItem,
-            this.toolStripSeparator2,
-            this.sairToolStripMenuItem});
-            this.ficheirosToolStripMenuItem.Enabled = false;
-            this.ficheirosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ficheirosToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Folders_icon;
-            this.ficheirosToolStripMenuItem.Name = "ficheirosToolStripMenuItem";
-            this.ficheirosToolStripMenuItem.Size = new System.Drawing.Size(116, 36);
-            this.ficheirosToolStripMenuItem.Text = "Ficheiros";
-            this.ficheirosToolStripMenuItem.Click += new System.EventHandler(this.ficheirosToolStripMenuItem_Click);
-            // 
-            // abrirToolStripMenuItem
-            // 
-            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
-            this.abrirToolStripMenuItem.Text = "Abrir";
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(186, 6);
-            // 
-            // guardarToolStripMenuItem
-            // 
-            this.guardarToolStripMenuItem.Name = "guardarToolStripMenuItem";
-            this.guardarToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
-            this.guardarToolStripMenuItem.Text = "Guardar";
-            // 
-            // guardarComoToolStripMenuItem
-            // 
-            this.guardarComoToolStripMenuItem.Name = "guardarComoToolStripMenuItem";
-            this.guardarComoToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
-            this.guardarComoToolStripMenuItem.Text = "Guardar como...";
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(186, 6);
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(189, 26);
-            this.sairToolStripMenuItem.Text = "Sair";
-            // 
-            // produtosToolStripMenuItem
-            // 
-            this.produtosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listagemToolStripMenuItem,
-            this.toolStripSeparator3,
-            this.novoToolStripMenuItem,
-            this.editarToolStripMenuItem,
-            this.apagarToolStripMenuItem,
-            this.toolStripSeparator4,
-            this.categoriasToolStripMenuItem});
-            this.produtosToolStripMenuItem.Enabled = false;
-            this.produtosToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.produtosToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Monitor_2_icon;
-            this.produtosToolStripMenuItem.Name = "produtosToolStripMenuItem";
-            this.produtosToolStripMenuItem.Size = new System.Drawing.Size(117, 36);
-            this.produtosToolStripMenuItem.Text = "Produtos";
-            // 
-            // listagemToolStripMenuItem
-            // 
-            this.listagemToolStripMenuItem.Name = "listagemToolStripMenuItem";
-            this.listagemToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.listagemToolStripMenuItem.Text = "Listagem";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
-            // 
-            // novoToolStripMenuItem
-            // 
-            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
-            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.novoToolStripMenuItem.Text = "Novo";
-            this.novoToolStripMenuItem.Click += new System.EventHandler(this.novoToolStripMenuItem_Click);
-            // 
-            // editarToolStripMenuItem
-            // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.editarToolStripMenuItem.Text = "Editar";
-            // 
-            // apagarToolStripMenuItem
-            // 
-            this.apagarToolStripMenuItem.Name = "apagarToolStripMenuItem";
-            this.apagarToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.apagarToolStripMenuItem.Text = "Apagar";
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
-            // 
-            // categoriasToolStripMenuItem
-            // 
-            this.categoriasToolStripMenuItem.Name = "categoriasToolStripMenuItem";
-            this.categoriasToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
-            this.categoriasToolStripMenuItem.Text = "Categorias";
-            this.categoriasToolStripMenuItem.Click += new System.EventHandler(this.categoriasToolStripMenuItem_Click);
-            // 
-            // VendasToolStripMenuItem
-            // 
-            this.VendasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registarToolStripMenuItem,
-            this.consultarToolStripMenuItem,
-            this.vendasMensaisToolStripMenuItem});
-            this.VendasToolStripMenuItem.Enabled = false;
-            this.VendasToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.VendasToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Basket_Coins_icon;
-            this.VendasToolStripMenuItem.Name = "VendasToolStripMenuItem";
-            this.VendasToolStripMenuItem.Size = new System.Drawing.Size(104, 36);
-            this.VendasToolStripMenuItem.Text = "Vendas";
-            // 
-            // registarToolStripMenuItem
-            // 
-            this.registarToolStripMenuItem.Name = "registarToolStripMenuItem";
-            this.registarToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
-            this.registarToolStripMenuItem.Text = "Registar";
-            // 
-            // consultarToolStripMenuItem
-            // 
-            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
-            this.consultarToolStripMenuItem.Text = "Consultar";
-            // 
-            // vendasMensaisToolStripMenuItem
-            // 
-            this.vendasMensaisToolStripMenuItem.Name = "vendasMensaisToolStripMenuItem";
-            this.vendasMensaisToolStripMenuItem.Size = new System.Drawing.Size(191, 26);
-            this.vendasMensaisToolStripMenuItem.Text = "Vendas Mensais";
-            // 
-            // reparar_ToolStripMenuItem
-            // 
-            this.reparar_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registroDeAvariasToolStripMenuItem});
-            this.reparar_ToolStripMenuItem.Enabled = false;
-            this.reparar_ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.reparar_ToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Gears_icon;
-            this.reparar_ToolStripMenuItem.Name = "reparar_ToolStripMenuItem";
-            this.reparar_ToolStripMenuItem.Size = new System.Drawing.Size(134, 36);
-            this.reparar_ToolStripMenuItem.Text = "Reparações";
-            this.reparar_ToolStripMenuItem.Click += new System.EventHandler(this.reparar_ToolStripMenuItem_Click);
-            // 
-            // registroDeAvariasToolStripMenuItem
-            // 
-            this.registroDeAvariasToolStripMenuItem.Name = "registroDeAvariasToolStripMenuItem";
-            this.registroDeAvariasToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
-            this.registroDeAvariasToolStripMenuItem.Text = "Registro de Avarias";
-            this.registroDeAvariasToolStripMenuItem.Click += new System.EventHandler(this.registroDeAvariasToolStripMenuItem_Click);
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.loginToolStripMenuItem.Image = global::InformáticaAPP.Properties.Resources.Lock_User_icon;
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(44, 36);
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // FormMain
             // 
