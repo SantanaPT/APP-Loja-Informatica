@@ -247,8 +247,8 @@
             // registroDeAvariasToolStripMenuItem
             // 
             this.registroDeAvariasToolStripMenuItem.Name = "registroDeAvariasToolStripMenuItem";
-            this.registroDeAvariasToolStripMenuItem.Size = new System.Drawing.Size(214, 26);
-            this.registroDeAvariasToolStripMenuItem.Text = "Registro de Avarias";
+            this.registroDeAvariasToolStripMenuItem.Size = new System.Drawing.Size(208, 26);
+            this.registroDeAvariasToolStripMenuItem.Text = "Registo de Avarias";
             this.registroDeAvariasToolStripMenuItem.Click += new System.EventHandler(this.registroDeAvariasToolStripMenuItem_Click);
             // 
             // toolStripMenuItem5

@@ -42,14 +42,14 @@
             this.chkGarantia = new System.Windows.Forms.CheckBox();
             this.dtData = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.ts_anular = new System.Windows.Forms.Button();
+            this.tsAdicionar = new System.Windows.Forms.Button();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.tsGuardarSair = new System.Windows.Forms.Button();
+            this.ts_validar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.grelha = new System.Windows.Forms.DataGridView();
@@ -185,25 +185,27 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Data:";
             // 
-            // button5
+            // ts_anular
             // 
-            this.button5.Image = global::InformáticaAPP.Properties.Resources.icons8_vassoura_30__1_;
-            this.button5.Location = new System.Drawing.Point(718, 312);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(58, 36);
-            this.button5.TabIndex = 10;
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
+            this.ts_anular.Image = global::InformáticaAPP.Properties.Resources.icons8_vassoura_30__1_;
+            this.ts_anular.Location = new System.Drawing.Point(718, 312);
+            this.ts_anular.Name = "ts_anular";
+            this.ts_anular.Size = new System.Drawing.Size(58, 36);
+            this.ts_anular.TabIndex = 10;
+            this.ts_anular.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ts_anular.UseVisualStyleBackColor = true;
+            this.ts_anular.Click += new System.EventHandler(this.ts_anular_Click);
             // 
-            // button4
+            // tsAdicionar
             // 
-            this.button4.Image = global::InformáticaAPP.Properties.Resources.icons8_mais_24__1_;
-            this.button4.Location = new System.Drawing.Point(718, 345);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(58, 36);
-            this.button4.TabIndex = 11;
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.tsAdicionar.Image = global::InformáticaAPP.Properties.Resources.icons8_mais_24__1_;
+            this.tsAdicionar.Location = new System.Drawing.Point(718, 345);
+            this.tsAdicionar.Name = "tsAdicionar";
+            this.tsAdicionar.Size = new System.Drawing.Size(58, 36);
+            this.tsAdicionar.TabIndex = 11;
+            this.tsAdicionar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tsAdicionar.UseVisualStyleBackColor = true;
+            this.tsAdicionar.Click += new System.EventHandler(this.tsAdicionar_Click);
             // 
             // pictureBox4
             // 
@@ -246,25 +248,27 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // button3
+            // tsGuardarSair
             // 
-            this.button3.Image = global::InformáticaAPP.Properties.Resources.icons8_guardar_todos_30;
-            this.button3.Location = new System.Drawing.Point(718, 234);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(58, 36);
-            this.button3.TabIndex = 9;
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.tsGuardarSair.Image = global::InformáticaAPP.Properties.Resources.icons8_guardar_todos_30;
+            this.tsGuardarSair.Location = new System.Drawing.Point(718, 234);
+            this.tsGuardarSair.Name = "tsGuardarSair";
+            this.tsGuardarSair.Size = new System.Drawing.Size(58, 36);
+            this.tsGuardarSair.TabIndex = 9;
+            this.tsGuardarSair.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.tsGuardarSair.UseVisualStyleBackColor = true;
+            this.tsGuardarSair.Click += new System.EventHandler(this.tsGuardarSair_Click);
             // 
-            // button2
+            // ts_validar
             // 
-            this.button2.Image = global::InformáticaAPP.Properties.Resources.icons8_selecionado_30;
-            this.button2.Location = new System.Drawing.Point(718, 378);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(58, 36);
-            this.button2.TabIndex = 12;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
+            this.ts_validar.Image = global::InformáticaAPP.Properties.Resources.icons8_selecionado_30;
+            this.ts_validar.Location = new System.Drawing.Point(718, 378);
+            this.ts_validar.Name = "ts_validar";
+            this.ts_validar.Size = new System.Drawing.Size(58, 36);
+            this.ts_validar.TabIndex = 12;
+            this.ts_validar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ts_validar.UseVisualStyleBackColor = true;
+            this.ts_validar.Click += new System.EventHandler(this.ts_validar_Click);
             // 
             // button1
             // 
@@ -304,8 +308,8 @@
             this.ControlBox = false;
             this.Controls.Add(this.grelha);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.ts_anular);
+            this.Controls.Add(this.tsAdicionar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dtData);
             this.Controls.Add(this.pictureBox4);
@@ -318,8 +322,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label_codigo);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.tsGuardarSair);
+            this.Controls.Add(this.ts_validar);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form3";
@@ -341,8 +345,8 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ts_validar;
+        private System.Windows.Forms.Button tsGuardarSair;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label_codigo;
@@ -361,8 +365,8 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.DateTimePicker dtData;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button tsAdicionar;
+        private System.Windows.Forms.Button ts_anular;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.DataGridView grelha;
     }
